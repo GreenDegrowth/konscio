@@ -4,7 +4,6 @@ author: "Timothy Brits"
 datePublished: 2025-11-26
 description: "A guide to the most persistent myths about socialism, from property and democracy to innovation and incentives. What socialism really challenges is concentrated power – not everyday life."
 excerpt: "People often think socialism wants to abolish toothbrushes and ban small businesses. These myths survive because they protect the interests of those who benefit from confusion. This article clears the fog around what socialism actually proposes — and why."
-image: /images/socialism-misconceptions.webp
 categories: ["Theory", "Analysis"]
 tags: ["Socialism", "Eco-Socialism", "Property", "Democracy", "Political Theory"]
 ---

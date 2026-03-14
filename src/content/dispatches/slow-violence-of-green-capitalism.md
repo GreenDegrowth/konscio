@@ -6,7 +6,6 @@ description: "How the promise of a clean transition masks the persistence of ext
 excerpt: "Green capitalism is slow violence. It works through distance and disguise, where branding sanitises harm and abstraction shields exploitation. The structure beneath remains intact."
 categories: ["Analysis"]
 tags: ["Green Capitalism", "Climate Politics", "Just Transition", "Extractivism"]
-image: /images/slow-violence-green-capitalism.webp
 ---
 
 A green future is being packaged for public consumption: governments speak about clean transitions, corporations pledge net zero, and advertisements cycle through forests, wind turbines, and electric cars presented as symbols of hope. The official narrative is straightforward—technology will correct the damage whilst the economic machine continues on its current trajectory.
