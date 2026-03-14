@@ -1,21 +1,36 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import { defineConfig } from "astro/config";
-import { FontaineTransform } from "fontaine";
+import { defineConfig, fontProviders } from "astro/config";
 import remarkGfm from "remark-gfm";
 import remarkSmartypants from "remark-smartypants";
 import { remarkReadingTime } from "./plugins/remark-reading-time.ts";
 import { config } from "./src/config";
-
-const fontaineOptions = {
-  fallbacks: ["system-ui", "sans-serif", "monospace"],
-};
 
 export default defineConfig({
   site: config.siteUrl,
   base: config.baseUrl,
   trailingSlash: "never",
   output: "static",
+  fonts: [
+    {
+      provider: fontProviders.fontsource(),
+      name: "Oswald",
+      cssVariable: "--font-oswald",
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "Work Sans",
+      cssVariable: "--font-work-sans",
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "JetBrains Mono",
+      cssVariable: "--font-jetbrains-mono",
+    },
+  ],
+  experimental: {
+    rustCompiler: true,
+  },
   prefetch: {
     defaultStrategy: "hover",
   },
@@ -34,9 +49,6 @@ export default defineConfig({
     },
   },
   integrations: [mdx(), sitemap()],
-  vite: {
-    plugins: [FontaineTransform.vite(fontaineOptions)],
-  },
   markdown: {
     remarkPlugins: [remarkReadingTime, remarkGfm, remarkSmartypants],
   },

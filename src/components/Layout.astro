@@ -1,7 +1,5 @@
 ---
-import "@fontsource-variable/jetbrains-mono";
-import "@fontsource-variable/oswald";
-import "@fontsource-variable/work-sans";
+import { Font } from "astro:assets";
 import "remixicon/fonts/remixicon.css";
 import "../styles/global.css";
 import Footer from "./Footer.astro";
@@ -42,6 +40,9 @@ const {
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <Font cssVariable="--font-oswald" preload />
+    <Font cssVariable="--font-work-sans" preload />
+    <Font cssVariable="--font-jetbrains-mono" preload />
     <SEO
       title={title}
       description={description}

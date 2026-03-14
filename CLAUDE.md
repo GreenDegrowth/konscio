@@ -29,7 +29,7 @@ npx vitest run tests/utils/slugify.test.ts
 
 1. Articles are Markdown/MDX files in `src/content/dispatches/`
 2. Frontmatter is validated against the Zod schema in `src/schemas/dispatches.ts`
-3. The collection is defined in `src/content/config.ts`
+3. The collection is defined in `src/content.config.ts`
 4. Pages use `getStaticPaths()` with `import.meta.glob()` to generate all routes
 5. RSS (`/rss.xml`) and search index (`/search.json`) are generated from the same collection
 
@@ -53,7 +53,7 @@ Draft posts and future-dated posts are excluded from all listings automatically.
 
 ### Styling
 
-CSS is split across `src/styles/` and imported via `global.css`. Design tokens are CSS custom properties in `variables.css` — always use these rather than hard-coded values. Dark mode is handled via `prefers-color-scheme: dark`. The baseline grid unit is `--grid-unit` (8px). Three variable fonts are self-hosted via `@fontsource-variable`: Oswald (headings), Work Sans (body), JetBrains Mono (code/metadata).
+CSS is split across `src/styles/` and imported via `global.css`. Design tokens are CSS custom properties in `variables.css` — always use these rather than hard-coded values. Dark mode is handled via `prefers-color-scheme: dark`. The baseline grid unit is `--grid-unit` (8px). Three variable fonts are loaded via Astro's Font API (`fontProviders.fontsource()`): Oswald (headings), Work Sans (body), JetBrains Mono (code/metadata). CSS variables `--font-oswald`, `--font-work-sans`, `--font-jetbrains-mono` are injected by Astro and referenced via the semantic aliases in `variables.css`.
 
 ### SEO
 
