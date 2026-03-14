@@ -42,14 +42,14 @@ An Astro-powered publication exploring capitalism, colonialism, and climate coll
 - **Language:** TypeScript
 - **Styling:** Scoped CSS with CSS Variables and Dark Mode support
 - **Fonts:** Self-hosted via @fontsource (Oswald, Work Sans, JetBrains Mono)
-- **Icons:** Lucide icons
-- **Build Tools:** Astro Compressor, PurgeCSS, Playform Inline, Fontaine for optimisation
+- **Icons:** Remixicon
+- **Build Tools:** Fontaine for font metric optimisation
 
 ## ⚡ Quick Start
 
 ### Prerequisites
 
-- Node.js 24.0.0 or higher
+- Node.js 22.21.1 or higher
 - Git
 
 ### Installation
@@ -128,7 +128,6 @@ All commands are run from the root of the project:
 | `npm run build`   | Build production site to `./dist/`         |
 | `npm run preview` | Preview your build locally                 |
 | `npm run check`   | Check TypeScript types                     |
-| `npm run lint`    | Run ESLint with auto-fix                   |
 | `npm run format`  | Format code with Prettier                  |
 | `npm run test`    | Run tests with Vitest                      |
 
@@ -156,7 +155,7 @@ Summary:
 
 ✓ Use clear English for any new English content
 
-✓ Run `npm run lint`, `npm run check`, `npm run test` before a Pull Request
+✓ Run `npm run check`, `npm run test` before a Pull Request
 
 ✓ Follow the commit prefixes: Add:, Fix:, Update:, Remove:, Docs:
 
@@ -176,7 +175,7 @@ Unless otherwise noted, code is MIT and content is CC0 1.0 Universal by default.
 ## 🙏 Acknowledgments
 
 - Built with [Astro](https://astro.build)
-- Icons by [Lucide](https://lucide.dev/)
+- Icons by [Remixicon](https://remixicon.com/)
 - Fonts by [Fontsource](https://fontsource.org/)
 - Theme based on [Volks-Typo](https://github.com/jdrhyne/volks-typo), created by [jdrhyne](https://github.com/jdrhyne)
 - Inspired by the urgent need for decolonial, eco-socialist transformation

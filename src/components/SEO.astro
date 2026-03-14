@@ -1,5 +1,4 @@
 ---
-import { Schema } from "astro-seo-schema";
 import { config } from "../config";
 
 const ogImageUrl = new URL("images/og-image.webp", Astro.site).toString();
@@ -61,8 +60,9 @@ const imageURL = new URL(image.replace(/^\//, ""), Astro.site);
 <meta name="twitter:image" content={imageURL.toString()} />
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
-<Schema
-  item={{
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": type === "article" ? "Article" : "WebSite",
     ...(type === "article"
@@ -100,7 +100,7 @@ const imageURL = new URL(image.replace(/^\//, ""), Astro.site);
             description: config.author.bio,
           },
         }),
-  }}
+  })}
 />
 <link rel="alternate" type="application/rss+xml" title={config.title} href="/rss.xml" />
 <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
