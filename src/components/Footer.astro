@@ -20,12 +20,6 @@ const currentYear = new Date().getFullYear();
       <p class="privacy-link" data-astro-prefetch>
         <a href="/privacy-policy">Privacy Policy</a>
       </p>
-
-      <p class="source-code">
-        <a href="https://github.com/CodeAndHammer/konscio" target="_blank" rel="noopener"
-          >Source Code on GitHub</a
-        >
-      </p>
     </div>
 
     <SocialLinks />
@@ -58,7 +52,6 @@ const currentYear = new Date().getFullYear();
   }
 
   .copyright,
-  .source-code,
   .privacy-link {
     margin: 0;
     font-size: 0.9rem;
@@ -66,7 +59,6 @@ const currentYear = new Date().getFullYear();
   }
 
   .copyright a,
-  .source-code a,
   .privacy-link a {
     color: var(--color-accent);
     text-decoration: underline;
@@ -75,8 +67,6 @@ const currentYear = new Date().getFullYear();
 
   .copyright a:hover,
   .copyright a:focus,
-  .source-code a:hover,
-  .source-code a:focus,
   .privacy-link a:hover,
   .privacy-link a:focus {
     color: var(--color-text-primary);
